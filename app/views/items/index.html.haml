@@ -1,0 +1,6 @@
+%h1 Hello
+
+=form_tag(items_path, :multipart => true) do
+  =label_tag 'item_image'
+  =file_field(:item, :image)
+  =submit_tag "Upload"
